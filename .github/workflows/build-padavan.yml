@@ -123,10 +123,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_AUDIO=n" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_LPRD/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_LPRD=n" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSH/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_DROPBEAR/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENVPN/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL/d' .config
